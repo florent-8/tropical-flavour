@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "name": "your-project-name",
-  "type": "javascript",
-  "account_id": "your-account-id",
+  "name": "tropical-flavour",
   "compatibility_date": "2026-03-30",
+  "assets": {
+    "directory": ".",
+  },
 }
