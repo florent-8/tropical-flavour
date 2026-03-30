@@ -1,0 +1,16 @@
+# This is the configuration file for Wrangler
+
+# The name of your project
+name = "your-project-name"
+
+# The type of your project
+type = "javascript"
+
+# The account ID for your Cloudflare account
+account_id = "your-account-id"
+
+# The workers.dev subdomain
+workers_dev = true
+
+# The compatibility date for your project
+compatibility_date = "2026-03-30"

@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="-fast-food-restaurant-logo-for--tropical-flavor-ch-removebg-preview.png" rel="icon" type="image/png"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -101,7 +102,10 @@
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
 <nav class="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-[#180800]/20">
 <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-<a class="text-2xl font-black tracking-tighter text-primary font-headline uppercase" href="#home">TROPICAL FLAVOR</a>
+<a class="flex items-center gap-3 text-2xl font-black tracking-tighter text-primary font-headline uppercase" href="#home">
+<img alt="Tropical Flavor logo" class="h-11 w-11 object-contain" src="-fast-food-restaurant-logo-for--tropical-flavor-ch-removebg-preview.png"/>
+<span>TROPICAL FLAVOR</span>
+</a>
 <div class="hidden md:flex gap-8 items-center">
 <a class="nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="home" href="#home">Home</a>
 <a class="nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="menu" href="#menu">Menu</a>
@@ -126,6 +130,13 @@
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background" id="home">
 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
 <div class="space-y-8">
+<div class="inline-flex items-center gap-4 rounded-full border border-outline-variant/20 bg-surface-container/80 px-4 py-3">
+<img alt="Tropical Flavor logo" class="h-14 w-14 object-contain" src="-fast-food-restaurant-logo-for--tropical-flavor-ch-removebg-preview.png"/>
+<div>
+<p class="font-headline text-sm font-black uppercase tracking-[0.35em] text-primary">Tropical Flavor</p>
+<p class="text-sm text-on-surface-variant">Princeton's late-night wings spot</p>
+</div>
+</div>
 <h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none text-on-surface">
                         WINGS THAT <br/> <span class="text-primary">HIT DIFFERENT.</span>
                     </h1>
