@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tropical Flavor Chicken Wings | Wings That Hit Different</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#fd8b00",
+              "surface-variant": "#262626",
+              "tertiary-container": "#ffd709",
+              "primary": "#ff9f4a",
+              "on-primary": "#532a00",
+              "surface-container": "#1a1a1a",
+              "tertiary-dim": "#efc900",
+              "primary-container": "#fd8b00",
+              "on-tertiary-fixed-variant": "#665500",
+              "on-tertiary-container": "#5b4b00",
+              "error": "#ff7351",
+              "secondary": "#ff725e",
+              "on-surface": "#ffffff",
+              "on-secondary": "#4a0000",
+              "on-tertiary-fixed": "#453900",
+              "tertiary": "#ffe792",
+              "primary-dim": "#ed8200",
+              "background": "#0e0e0e",
+              "on-primary-container": "#442100",
+              "secondary-container": "#c00100",
+              "on-secondary-fixed-variant": "#a60100",
+              "outline": "#767575",
+              "on-primary-fixed-variant": "#512800",
+              "error-dim": "#d53d18",
+              "on-surface-variant": "#adaaaa",
+              "surface-container-lowest": "#000000",
+              "on-secondary-container": "#fff6f4",
+              "error-container": "#b92902",
+              "surface-container-highest": "#262626",
+              "surface-bright": "#2c2c2c",
+              "on-tertiary": "#655400",
+              "surface-container-low": "#131313",
+              "surface": "#0e0e0e",
+              "secondary-fixed": "#ffc4ba",
+              "inverse-primary": "#914d00",
+              "on-secondary-fixed": "#700100",
+              "tertiary-fixed": "#ffd709",
+              "inverse-on-surface": "#565555",
+              "on-primary-fixed": "#180800",
+              "secondary-fixed-dim": "#ffb0a3",
+              "tertiary-fixed-dim": "#efc900",
+              "outline-variant": "#484847",
+              "inverse-surface": "#fcf9f8",
+              "primary-fixed-dim": "#ea8000",
+              "secondary-dim": "#eb0000",
+              "on-error-container": "#ffd2c8",
+              "surface-container-high": "#20201f",
+              "on-background": "#ffffff",
+              "surface-dim": "#0e0e0e",
+              "surface-tint": "#ff9f4a",
+              "on-error": "#450900"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-header {
+            background-color: rgba(14, 14, 14, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .page-view {
+            display: none;
+        }
+        .page-view.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<nav class="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-[#180800]/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-primary font-headline uppercase" href="#home">TROPICAL FLAVOR</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="home" href="#home">Home</a>
+<a class="nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="menu" href="#menu">Menu</a>
+<a class="nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="location" href="#location">Location</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant/20 px-6 pb-6" id="mobile-menu">
+<div class="flex flex-col gap-4 pt-4">
+<a class="mobile-nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="home" href="#home">Home</a>
+<a class="mobile-nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="menu" href="#menu">Menu</a>
+<a class="mobile-nav-link font-headline tracking-tighter uppercase font-black text-on-surface-variant hover:text-tertiary transition-colors duration-300" data-route="location" href="#location">Location</a>
+<a class="mobile-nav-link font-headline tracking-tighter uppercase font-black text-primary hover:text-tertiary transition-colors duration-300" href="#order">Order Now</a>
+</div>
+</div>
+</nav>
+
+<main>
+<div class="page-view active" data-page="home">
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background" id="home">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none text-on-surface">
+                        WINGS THAT <br/> <span class="text-primary">HIT DIFFERENT.</span>
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-lg">
+                        Tropical flavors. Crispy every time. <br/>
+<span class="text-secondary font-bold">Open 24 hours.</span>
+</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-md hover:scale-105 transition-transform inline-flex" href="#order">
+                            Order Now
+                        </a>
+<a class="px-8 py-4 border-2 border-on-surface text-on-surface font-bold rounded-md hover:bg-on-surface hover:text-background transition-all inline-flex" href="#menu">
+                            See the Menu
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square relative z-20 overflow-hidden rounded-xl rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl">
+<img alt="Crispy Wings" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQXIXaAUWy7zYGsaxv2uv4V1e2ULmv-s2SKzPGk5E2tZry52smZL_G741A0gg-1BhZhDZw60_3h6PSODuKSC7xDKIII7aiY5CQRhH-su2orYTPswlpBdGGcyH7VBS3OuWV9qGo30ByIik1_JAt7e5-tPoVn7jcqmwuHvFpaokFIlCn2Z9NGvmqL6WFfnQG5qtrdKOt4V4b-MBSDlA_fvcLDLPWmPB3UODGwXvESYO7z_5hAaayzM4MEkukN6tk5fxjjeezUTQSfZqt"/>
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+
+<section class="bg-surface-container-low py-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-wrap justify-between items-center gap-8 py-6 px-10 bg-surface-container rounded-full border border-outline-variant/15">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="font-headline tracking-tight font-extrabold text-on-surface uppercase">Open 24 Hours</span>
+</div>
+<div class="hidden md:block h-8 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">delivery_dining</span>
+<span class="font-headline tracking-tight font-extrabold text-on-surface uppercase">Dine-in, Takeaway &amp; Delivery</span>
+</div>
+<div class="hidden md:block h-8 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">local_fire_department</span>
+<span class="font-headline tracking-tight font-extrabold text-on-surface uppercase">Tropical Flavors</span>
+</div>
+<div class="hidden md:block h-8 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-headline tracking-tight font-extrabold text-on-surface uppercase">Princeton, NJ</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface">Popular Picks</h2>
+<div class="h-1.5 w-24 bg-primary mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<img alt="Wings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqVP-0BKcZBviv6CMmAzsKc7axdaesG_mPxlGoh8t0n96bdF3ZJm6CCd6bSO80WZeywIyS5b_yWBPEvrpfKqiw7jQ2Vd6ey9pdP2SbyMAU7tfKcLcHD-GEbm9Wex9PckO5i-dasKWd01cTQV169qv-v6tGtri3dkjag4QEb5ULxLlqyveQ8Th50Gx4FpTBNK5T5mCMEYg04d0kSzyueVzQlRk_3mW-iH6O1C4MpUSERG0p44vH5Xs9B1H-_o-7r4EBTN2jnLbEvBdO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-3xl">W</span>
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-primary">6-Piece Wings</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Crispy, saucy, and cooked fresh with your choice of signature tropical flavor.</p>
+<p class="text-primary font-bold uppercase tracking-[0.2em] text-sm">$10.99</p>
+</div>
+</div>
+<div class="group bg-surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<img alt="Chicken Sandwich" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3NJhNPKdouULXrJ14lzt44gp-q4sh__5KU6JRs7Fdm7V8GA9wXsiqolCC6TITT2TeU9n8JhMzFip8uKR1-jekowqN4xAt5xJWgUmYuk_dQX891PxR5MBfBNZcMHOgTKYoUTsht3ItwGcYX-J8ap0HWxt8b-JKMsU2LHjChQbNRAGFQD8A0h8HO0gCBsgrH6oEm0T6ybd0_S6BTpXKYnQva_2Fopfu9FNJUR9BZsn2FPO1aGebOv9wBRYAqHMlcSVAqb-Ggmp9teoS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-3xl">S</span>
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-secondary">Chicken Sandwich</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Crunchy fried chicken stacked with sauce and pickles on a toasted bun.</p>
+<p class="text-secondary font-bold uppercase tracking-[0.2em] text-sm">$9.99</p>
+</div>
+</div>
+<div class="group bg-surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<img alt="Loaded Fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJJpTP4k_cwcRc454GJknZtTm0mnPfLBuUeTTOmbB_HQsxba_vU6WZjbOHzrZ6GKxrzVqpbjdHhbvpWsGkwW4yWhhckYWCS3f7E1UUhcq7qLY5SJ_ruq8cFSG9mS88ZPNiJb7ecQD4xSvPY15EaGa6qHxTpS9A5z2ALioZtzNRwH4lVqGIe4YEDfjP3O1yfmtdEu4dKZKW1CkG6f7teAvtKCXgM4Swrg2jD04XCAQKufQyFUjmqtVW_BYsQe7r7oCmu2KEDol87yrW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-3xl">F</span>
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-tertiary">Loaded Fries</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Golden fries topped with chopped chicken, sauce drizzle, and house seasoning.</p>
+<p class="text-tertiary font-bold uppercase tracking-[0.2em] text-sm">$8.99</p>
+</div>
+</div>
+</div>
+<div class="pt-10">
+<a class="inline-flex px-8 py-4 border-2 border-on-surface text-on-surface font-bold rounded-md hover:bg-on-surface hover:text-background transition-all" href="#menu">See Full Menu</a>
+</div>
+</div>
+</section>
+
+<section class="relative py-32 bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<span class="text-primary font-bold tracking-[0.5em] uppercase text-sm mb-6 block">Midnight Heat</span>
+<blockquote class="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-none text-on-surface italic">
+                    "MIDNIGHT CRAVING? <br/> WE'RE ALWAYS HERE."
+                </blockquote>
+<p class="mt-10 text-on-surface-variant font-medium tracking-wide">Serving the flavors of the islands, 24/7/365.</p>
+</div>
+</section>
+</div>
+
+<div class="page-view" data-page="menu">
+<section class="pt-32 pb-24 bg-background min-h-screen">
+<div class="max-w-5xl mx-auto px-6">
+<div class="mb-12">
+<p class="text-primary font-bold tracking-[0.35em] uppercase text-sm">Full Menu</p>
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface mt-4">Everything Worth Ordering</h2>
+<p class="text-on-surface-variant text-lg mt-4 max-w-2xl">This page keeps things simple: no size selector, no heat chooser, and no side add-ons. Just the full menu your customers can browse before ordering.</p>
+</div>
+<div class="grid gap-8 md:grid-cols-2">
+<div class="bg-surface-container rounded-xl p-8">
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-primary mb-6">Wings</h3>
+<div class="space-y-4 text-on-surface-variant">
+<div class="flex justify-between gap-4"><span>6-Piece Wings</span><span class="text-on-surface">$10.99</span></div>
+<div class="flex justify-between gap-4"><span>10-Piece Wings</span><span class="text-on-surface">$15.99</span></div>
+<div class="flex justify-between gap-4"><span>20-Piece Wings</span><span class="text-on-surface">$28.99</span></div>
+<div class="flex justify-between gap-4"><span>Boneless Wings Basket</span><span class="text-on-surface">$12.99</span></div>
+<div class="flex justify-between gap-4"><span>Tenders Combo</span><span class="text-on-surface">$13.99</span></div>
+<p class="pt-4 text-sm uppercase tracking-[0.2em] text-primary">Flavors: Mango Habanero, Sweet Chili, Garlic Pepper, Island BBQ, Lemon Pepper</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-8">
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-secondary mb-6">Sandwiches &amp; Wraps</h3>
+<div class="space-y-4 text-on-surface-variant">
+<div class="flex justify-between gap-4"><span>Classic Chicken Sandwich</span><span class="text-on-surface">$9.99</span></div>
+<div class="flex justify-between gap-4"><span>Spicy Tropical Sandwich</span><span class="text-on-surface">$10.49</span></div>
+<div class="flex justify-between gap-4"><span>Crispy Chicken Wrap</span><span class="text-on-surface">$9.49</span></div>
+<div class="flex justify-between gap-4"><span>Grilled Chicken Wrap</span><span class="text-on-surface">$9.99</span></div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-8">
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-tertiary mb-6">Fries &amp; Sides</h3>
+<div class="space-y-4 text-on-surface-variant">
+<div class="flex justify-between gap-4"><span>Seasoned Fries</span><span class="text-on-surface">$4.99</span></div>
+<div class="flex justify-between gap-4"><span>Loaded Fries</span><span class="text-on-surface">$8.99</span></div>
+<div class="flex justify-between gap-4"><span>Mozzarella Sticks</span><span class="text-on-surface">$6.99</span></div>
+<div class="flex justify-between gap-4"><span>Mac &amp; Cheese Bites</span><span class="text-on-surface">$6.49</span></div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-8">
+<h3 class="font-headline text-2xl font-black tracking-tighter uppercase text-primary mb-6">Drinks &amp; Desserts</h3>
+<div class="space-y-4 text-on-surface-variant">
+<div class="flex justify-between gap-4"><span>Can Soda</span><span class="text-on-surface">$1.99</span></div>
+<div class="flex justify-between gap-4"><span>Bottled Soda</span><span class="text-on-surface">$2.99</span></div>
+<div class="flex justify-between gap-4"><span>Tropical Lemonade</span><span class="text-on-surface">$3.99</span></div>
+<div class="flex justify-between gap-4"><span>Churros</span><span class="text-on-surface">$5.49</span></div>
+</div>
+</div>
+</div>
+<div class="pt-10 flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-md hover:scale-105 transition-transform inline-flex" href="#order">Order Now</a>
+<a class="px-8 py-4 border-2 border-on-surface text-on-surface font-bold rounded-md hover:bg-on-surface hover:text-background transition-all inline-flex" href="#home">Back Home</a>
+</div>
+</div>
+</section>
+</div>
+
+<div class="page-view" data-page="order">
+<section class="pt-32 pb-24 bg-background min-h-screen">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<p class="text-primary font-bold tracking-[0.35em] uppercase text-sm">Order Delivery</p>
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface mt-4">Choose Your Delivery App</h2>
+<p class="text-on-surface-variant text-lg mt-4 max-w-2xl mx-auto">Send customers straight to your delivery partners from here. Replace the links below with your real store URLs if needed.</p>
+<div class="grid gap-6 md:grid-cols-2 mt-12">
+<a class="bg-surface-container hover:bg-surface-container-high rounded-xl p-8 border border-outline-variant/20 transition-all text-left" href="https://www.doordash.com/" rel="noreferrer" target="_blank">
+<p class="font-headline text-3xl font-black tracking-tighter uppercase text-primary">DoorDash</p>
+<p class="text-on-surface-variant mt-3">Open DoorDash and place your order for Tropical Flavor.</p>
+</a>
+<a class="bg-surface-container hover:bg-surface-container-high rounded-xl p-8 border border-outline-variant/20 transition-all text-left" href="https://www.ubereats.com/" rel="noreferrer" target="_blank">
+<p class="font-headline text-3xl font-black tracking-tighter uppercase text-secondary">Uber Eats</p>
+<p class="text-on-surface-variant mt-3">Open Uber Eats and place your order for Tropical Flavor.</p>
+</a>
+</div>
+<div class="pt-10 flex flex-wrap gap-4 justify-center">
+<a class="px-8 py-4 border-2 border-on-surface text-on-surface font-bold rounded-md hover:bg-on-surface hover:text-background transition-all inline-flex" href="#menu">See Full Menu</a>
+<a class="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-primary hover:text-on-primary transition-all inline-flex" href="#home">Back Home</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer class="bg-surface-container-low w-full py-16 px-6 mt-0" id="location">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto text-center md:text-left">
+<div>
+<span class="text-2xl font-black tracking-tighter text-primary font-headline uppercase block mb-6">TROPICAL FLAVOR</span>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed max-w-xs">
+                    The best wings in Princeton. Hand-tossed in signature tropical glazes and served hot around the clock.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-on-surface font-black uppercase text-lg">Contact &amp; Hours</h4>
+<div class="space-y-2">
+<p class="font-body text-sm text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                        28 Spring St, Princeton, NJ 08542
+                    </p>
+<p class="font-body text-sm text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+<a class="hover:text-primary transition-colors" href="tel:+12038078132">+1 203-807-8132</a>
+                    </p>
+<p class="font-body text-sm text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+                        Open 24 Hours
+                    </p>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline text-on-surface font-black uppercase text-lg">Order Delivery</h4>
+<div class="flex justify-center md:justify-start gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100 font-bold uppercase text-xs tracking-widest underline decoration-2 decoration-primary underline-offset-4" href="https://www.doordash.com/" rel="noreferrer" target="_blank">DoorDash</a>
+<a class="text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100 font-bold uppercase text-xs tracking-widest underline decoration-2 decoration-primary underline-offset-4" href="https://www.ubereats.com/" rel="noreferrer" target="_blank">Uber Eats</a>
+</div>
+<p class="font-body text-[10px] text-on-surface-variant/50 uppercase tracking-[0.2em] pt-8">
+                    &copy; 2026 Tropical Flavor Chicken Wings. All Rights Reserved.
+                </p>
+</div>
+</div>
+</footer>
+
+<script>
+        const pages = document.querySelectorAll('[data-page]');
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+        function setActivePage() {
+            const hash = window.location.hash || '#home';
+            const route = hash.replace('#', '');
+            const validRoutes = ['home', 'menu', 'order', 'location'];
+            const currentRoute = validRoutes.includes(route) ? route : 'home';
+            const currentPage = currentRoute === 'location' ? 'home' : currentRoute;
+
+            pages.forEach((page) => {
+                page.classList.toggle('active', page.dataset.page === currentPage);
+            });
+
+            navLinks.forEach((link) => {
+                const active = link.dataset.route === currentRoute;
+                link.classList.toggle('text-primary', active);
+                link.classList.toggle('border-b-2', active);
+                link.classList.toggle('border-primary', active);
+                link.classList.toggle('text-on-surface-variant', !active);
+            });
+
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+
+            if (currentRoute === 'location') {
+                requestAnimationFrame(() => {
+                    document.getElementById('location').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+                return;
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        mobileMenuButton.addEventListener('click', () => {
+            const willShow = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(willShow));
+        });
+
+        window.addEventListener('hashchange', setActivePage);
+        window.addEventListener('DOMContentLoaded', setActivePage);
+    </script>
+</body>
+</html>
